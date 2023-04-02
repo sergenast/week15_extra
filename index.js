@@ -11,23 +11,23 @@ for (i = 0; i < number.length; i++) {
 function letsGo() {
 
     let showNumber = document.createElement('p');
-    showNumber.innerHTML = array;
+    showNumber.innerHTML = "Цифры числа: " + array;
     result.appendChild(showNumber);
 
     let count = document.createElement('p');
-    count.innerHTML = number.length;
+    count.innerHTML = "Длина числа: " + number.length;
     result.appendChild(count);
 
     let sumDiv = document.createElement('p');
     let sumNumber = array.reduce(function (sum, elem) {
         return Number(sum) + Number(elem);
     }, 0);
-    sumDiv.innerHTML = sumNumber;
+    sumDiv.innerHTML = "Сумма всех цифр: " + sumNumber;
     result.appendChild(sumDiv);
 
 
     let reverse = document.createElement('p');
-    reverse.innerHTML = array.reverse();
+    reverse.innerHTML = "Число наоборот: " + array.reverse();
     result.appendChild(reverse);
 
 }
